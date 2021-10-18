@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     # local
     "home.apps.HomeConfig",
+    "accounts.apps.AccountsConfig",
 ]
 
 MIDDLEWARE = [
@@ -134,3 +135,5 @@ STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.FileSystemFinder",
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
 ]
+
+AUTH_USER_MODEL = 'accounts.CustomUser'

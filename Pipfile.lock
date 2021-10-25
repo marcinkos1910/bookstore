@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "1d53715c12c6c426fcbd9b9051771a7565e9951db37cfbb399ad8d5df9dbe5ed"
+            "sha256": "b885a3c6ab6cfee871799dc986990e1fa0e81562560446110972a20ea95c071f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -74,6 +74,14 @@
             "markers": "python_version >= '3.6'",
             "version": "==6.0.2"
         },
+        "crispy-bootstrap5": {
+            "hashes": [
+                "sha256:ca5d2afc2a5d1cf12b8d057886a81002cdf7793afcbe0ce006c2294069c1f387",
+                "sha256:e8c50daaf266d6127c7414f5669d5f2467b640d08b045ed9dd57e351d30609ae"
+            ],
+            "index": "pypi",
+            "version": "==0.6"
+        },
         "django": {
             "hashes": [
                 "sha256:9f8be75646f62204320b195062b1d696ba28aa3d45ee72fb7c888ffaebc5bdb2",
@@ -81,6 +89,14 @@
             ],
             "index": "pypi",
             "version": "==3.1.13"
+        },
+        "django-crispy-forms": {
+            "hashes": [
+                "sha256:4dc9e5263c91c5f51766806a050ca2ec5c349d34c5cd91fcca3a1a0363b5e29e",
+                "sha256:9c49d29dd9e98dc2e6e3a8b02670d72deb6edf7bc616986ca412d72c306b36a0"
+            ],
+            "index": "pypi",
+            "version": "==1.13.0"
         },
         "iniconfig": {
             "hashes": [
@@ -155,11 +171,11 @@
         },
         "pyparsing": {
             "hashes": [
-                "sha256:c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1",
-                "sha256:ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b"
+                "sha256:84196357aa3566d64ad123d7a3c67b0e597a115c4934b097580e5ce220b91531",
+                "sha256:fd93fc45c47893c300bd98f5dd1b41c0e783eaeb727e7cea210dcc09d64ce7c3"
             ],
-            "markers": "python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2, 3.3'",
-            "version": "==2.4.7"
+            "markers": "python_version >= '3.6'",
+            "version": "==3.0.1"
         },
         "pytest": {
             "hashes": [
@@ -210,10 +226,10 @@
         },
         "tomli": {
             "hashes": [
-                "sha256:8dd0e9524d6f386271a36b41dbf6c57d8e32fd96fd22b6584679dc569d20899f",
-                "sha256:a5b75cb6f3968abb47af1b40c1819dc519ea82bcc065776a866e8d74c5ca9442"
+                "sha256:c6ce0015eb38820eaf32b5db832dbc26deb3dd427bd5f6556cf0acac2c214fee",
+                "sha256:f04066f68f5554911363063a30b108d2b5a5b1a010aa8b6132af78489fe3aade"
             ],
-            "version": "==1.2.1"
+            "version": "==1.2.2"
         }
     },
     "develop": {}

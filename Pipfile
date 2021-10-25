@@ -9,6 +9,8 @@ psycopg2-binary = "*"
 pytest = "*"
 pytest-cov = "*"
 pytest-django = "*"
+crispy-bootstrap5 = "*"
+django-crispy-forms = "*"
 
 [dev-packages]
 

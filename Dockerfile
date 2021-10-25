@@ -10,6 +10,6 @@ WORKDIR /code
 COPY Pipfile Pipfile.lock /code/
 RUN pip install pipenv && pipenv install --system
 
-RUN pip install pytest-django && pip isntall pytest-cov
+RUN pip install pytest-django && pip install pytest-cov
 # Copy project
 COPY . /code/

@@ -20,3 +20,4 @@
 5. settings -> CRISPY_TEMPLATE_PACK = 'bootstrap5'
 6. templates -> {% load crispy_form_tags %}
 7. {{ form.as_p }} replace to {{ form|crispy }}
+

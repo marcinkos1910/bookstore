@@ -11,6 +11,7 @@ pytest-cov = "*"
 pytest-django = "*"
 crispy-bootstrap5 = "*"
 django-crispy-forms = "*"
+django-allauth = "*"
 
 [dev-packages]
 

@@ -2,12 +2,12 @@
 1. Model - User
 2. Forms - CustomUserCreationForm
 3. View:
-   1. Create file at 'accounts' views.py
-   2. Create class and inherit from generic.CreateView
+   * Create file at 'accounts' views.py
+   * Create class and inherit from generic.CreateView
 4. Templates:
-   1. Create signup.html -> templates/registration
+   * Create signup.html -> templates/registration
 5. Create urls at accounts app
-   1. endpoint sinup/, name='signup'
+   * endpoint signup/, name='signup'
 6. Connect account at main urls
 7. Settings - installed apps
 8. Add signup to base.html

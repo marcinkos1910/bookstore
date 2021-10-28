@@ -5,27 +5,19 @@ from accounts.forms import CustomUserCreationForm
 
 
 @pytest.fixture
-def get_signup_response():
+def get_signup_response(db):
     client = Client(enforce_csrf_checks=True)
-    url = reverse('accounts:signup')
+    url = reverse('account_signup')
     response = client.get(url)
     return response
 
 
-def test_signup_status_code(client):
+def test_signup_status_code(client, db):
     response = client.get('/accounts/signup/')
     assert response.status_code == 200
 
 
 def test_signup_reverse(get_signup_response):
     assert get_signup_response.status_code == 200
-    assert 'registration/signup.html' in [t.name for t in get_signup_response.templates]
+    assert 'account/signup.html' in [t.name for t in get_signup_response.templates]
     assert 'Sign Up' in get_signup_response.content.decode('UTF-8')
-
-
-def test_signup_form(get_signup_response):
-    form = get_signup_response.context.get('form')
-    assert isinstance(form, CustomUserCreationForm)
-    # assert 'csrfmiddlewaretoken' in get_signup_response
-
-

@@ -7,12 +7,17 @@ services:
       volumes:
          - .:/code
       ports:
-         - 8000:8000
+         - "8000:8000"
       depends_on:
          -  db
       restart: "on-failure"
       env_file:
          -  ./.env
+      environment:
+         - "DJANGO_SECRET_KEY=o8%92b%*c135%o@6)elk!j-aa_)i^cixi*1!$$(8rm^**2d44hk"
+         - "DJANGO_DEBUG=True"
+
+
 
    db:
       image: library/postgres:13-alpine
@@ -20,6 +25,8 @@ services:
          -  postgres_data:/var/lib/postrgresql/data/
       env_file:
          -  ./.env.db
+      environment:
+         - "POSTGRES_HOST_AUTH_METHOD=trust"
 
 volumes:
    postgres_data:

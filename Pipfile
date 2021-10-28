@@ -12,6 +12,8 @@ pytest-django = "*"
 crispy-bootstrap5 = "*"
 django-crispy-forms = "*"
 django-allauth = "*"
+environs = {version = "==9.3.4", extras = ["django"]}
+dj-database-url = "==0.5.0"
 
 [dev-packages]
 

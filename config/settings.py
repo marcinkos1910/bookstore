@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     # local
     "home.apps.HomeConfig",
     "accounts.apps.AccountsConfig",
+    "books.apps.BooksConfig"
 ]
 
 MIDDLEWARE = [
